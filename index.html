@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>document</title>
+  <style>
+     body {
+      background-color: green; /* Default color */
+  }
+  input{
+     padding: 10px;
+      font-size: 16px;
+      text-align: center;
+      margin-left: 40%;
+  }
+  </style>
+</head>
+<body>
+<input type="number" placeholder="write temperature here" id="a" oninput="abc()">
+
+  <script>
+   function abc(){
+    a=document.getElementById('a').value
+
+      if (a>30) {
+        document.body.style.backgroundColor = "red";
+      } 
+      else if(a<10){
+          document.body.style.backgroundColor = "blue";
+      }
+      else {
+        document.body.style.backgroundColor = "green";
+      }
+   }
+    
+  </script>
+
+</body>
+</html>
